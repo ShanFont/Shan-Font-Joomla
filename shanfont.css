@@ -1,0 +1,178 @@
+/**
+ * Shan Font CSS Helper
+ * Additional styles and utilities for Shan Font plugin
+ * @package     Shan Font Plugin
+ * @copyright   Copyright (C) 2025 TaiDev. All rights reserved.
+ * @license     GNU General Public License version 2 or later
+ */
+
+/* Font Weight Classes */
+.shan-thin {
+    font-family: "Shan", Arial, sans-serif !important;
+    font-weight: 100 !important;
+}
+
+.shan-thin-italic {
+    font-family: "Shan", Arial, sans-serif !important;
+    font-weight: 100 !important;
+    font-style: italic !important;
+}
+
+.shan-regular {
+    font-family: "Shan", Arial, sans-serif !important;
+    font-weight: 400 !important;
+}
+
+.shan-italic {
+    font-family: "Shan", Arial, sans-serif !important;
+    font-weight: 400 !important;
+    font-style: italic !important;
+}
+
+.shan-bold {
+    font-family: "Shan", Arial, sans-serif !important;
+    font-weight: 700 !important;
+}
+
+.shan-bold-italic {
+    font-family: "Shan", Arial, sans-serif !important;
+    font-weight: 700 !important;
+    font-style: italic !important;
+}
+
+.shan-black {
+    font-family: "Shan", Arial, sans-serif !important;
+    font-weight: 900 !important;
+}
+
+.shan-black-italic {
+    font-family: "Shan", Arial, sans-serif !important;
+    font-weight: 900 !important;
+    font-style: italic !important;
+}
+
+/* Utility Classes */
+.shan-font {
+    font-family: "Shan", Arial, sans-serif !important;
+}
+
+.no-shan-font {
+    font-family: Arial, sans-serif !important;
+}
+
+/* Responsive Font Sizes */
+.shan-text-sm {
+    font-size: 0.875rem !important;
+}
+
+.shan-text-base {
+    font-size: 1rem !important;
+}
+
+.shan-text-lg {
+    font-size: 1.125rem !important;
+}
+
+.shan-text-xl {
+    font-size: 1.25rem !important;
+}
+
+.shan-text-2xl {
+    font-size: 1.5rem !important;
+}
+
+.shan-text-3xl {
+    font-size: 1.875rem !important;
+}
+
+/* Text Alignment Classes */
+.shan-text-left {
+    text-align: left !important;
+}
+
+.shan-text-center {
+    text-align: center !important;
+}
+
+.shan-text-right {
+    text-align: right !important;
+}
+
+.shan-text-justify {
+    text-align: justify !important;
+}
+
+/* Line Height Classes */
+.shan-leading-tight {
+    line-height: 1.25 !important;
+}
+
+.shan-leading-normal {
+    line-height: 1.5 !important;
+}
+
+.shan-leading-loose {
+    line-height: 1.75 !important;
+}
+
+/* Letter Spacing Classes */
+.shan-tracking-tight {
+    letter-spacing: -0.025em !important;
+}
+
+.shan-tracking-normal {
+    letter-spacing: 0 !important;
+}
+
+.shan-tracking-wide {
+    letter-spacing: 0.025em !important;
+}
+
+/* Text Decoration Classes */
+.shan-no-underline {
+    text-decoration: none !important;
+}
+
+.shan-underline {
+    text-decoration: underline !important;
+}
+
+/* Text Transform Classes */
+.shan-uppercase {
+    text-transform: uppercase !important;
+}
+
+.shan-lowercase {
+    text-transform: lowercase !important;
+}
+
+.shan-capitalize {
+    text-transform: capitalize !important;
+}
+
+.shan-normal-case {
+    text-transform: none !important;
+}
+
+/* Responsive Utilities */
+@media (max-width: 767px) {
+    .shan-mobile-center {
+        text-align: center !important;
+    }
+    
+    .shan-mobile-small {
+        font-size: 0.875rem !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .shan-tablet-large {
+        font-size: 1.125rem !important;
+    }
+}
+
+@media (min-width: 1024px) {
+    .shan-desktop-xl {
+        font-size: 1.25rem !important;
+    }
+}

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="4.0" type="plugin" group="system" method="upgrade">
+    <name>PLG_SYSTEM_SHANFONT</name>
+    <author>TaiDev</author>
+    <creationDate>August 2025</creationDate>
+    <copyright>Copyright (C) 2025 TaiDev. All rights reserved.</copyright>
+    <license>GNU General Public License version 2 or later</license>
+    <authorEmail>info@shanfont.com</authorEmail>
+    <authorUrl>https://shanfont.com</authorUrl>
+    <version>1.0.0</version>
+    <description>PLG_SYSTEM_SHANFONT_XML_DESCRIPTION</description>
+    
+    <files>
+        <filename plugin="shanfont">shanfont.php</filename>
+        <folder>assets</folder>
+        <folder>fonts</folder>
+        <folder>language</folder>
+        <folder>tmpl</folder>
+        <folder>field</folder>
+    </files>
+    
+    <languages>
+        <language tag="en-GB">language/en-GB/plg_system_shanfont.ini</language>
+        <language tag="en-GB">language/en-GB/plg_system_shanfont.sys.ini</language>
+    </languages>
+    
+    <config>
+        <fields name="params">
+            <fieldset name="basic" label="PLG_SYSTEM_SHANFONT_FIELDSET_BASIC">
+                <field
+                    name="font_mode"
+                    type="shanfontmode"
+                    label="PLG_SYSTEM_SHANFONT_FIELD_MODE_LABEL"
+                    description="PLG_SYSTEM_SHANFONT_FIELD_MODE_DESC"
+                    default="quick_setup"
+                    addfieldpath="/plugins/system/shanfont/field"
+                />
+                
+                <field
+                    name="custom_fonts"
+                    type="checkboxes"
+                    label="PLG_SYSTEM_SHANFONT_FIELD_CUSTOM_FONTS_LABEL"
+                    description="PLG_SYSTEM_SHANFONT_FIELD_CUSTOM_FONTS_DESC"
+                    showon="font_mode:custom_selection"
+                    multiple="true"
+                >
+                    <option value="Shan-Thin.woff2">PLG_SYSTEM_SHANFONT_FONT_THIN</option>
+                    <option value="Shan-ThinItalic.woff2">PLG_SYSTEM_SHANFONT_FONT_THIN_ITALIC</option>
+                    <option value="Shan-Regular.woff2">PLG_SYSTEM_SHANFONT_FONT_REGULAR</option>
+                    <option value="Shan-Italic.woff2">PLG_SYSTEM_SHANFONT_FONT_ITALIC</option>
+                    <option value="Shan-Bold.woff2">PLG_SYSTEM_SHANFONT_FONT_BOLD</option>
+                    <option value="Shan-BoldItalic.woff2">PLG_SYSTEM_SHANFONT_FONT_BOLD_ITALIC</option>
+                    <option value="Shan-Black.woff2">PLG_SYSTEM_SHANFONT_FONT_BLACK</option>
+                    <option value="Shan-BlackItalic.woff2">PLG_SYSTEM_SHANFONT_FONT_BLACK_ITALIC</option>
+                </field>
+                
+                <field
+                    name="use_cdn"
+                    type="radio"
+                    label="PLG_SYSTEM_SHANFONT_FIELD_CDN_LABEL"
+                    description="PLG_SYSTEM_SHANFONT_FIELD_CDN_DESC"
+                    default="1"
+                    showon="font_mode!:theme_defaults"
+                    class="btn-group btn-group-yesno"
+                >
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+                
+                <field
+                    name="plugin_info"
+                    type="note"
+                    label="PLG_SYSTEM_SHANFONT_INFO_LABEL"
+                    description="PLG_SYSTEM_SHANFONT_INFO_DESC"
+                    class="alert alert-info"
+                />
+            </fieldset>
+            
+            <fieldset name="advanced" label="PLG_SYSTEM_SHANFONT_FIELDSET_ADVANCED">
+                <field
+                    name="apply_to_admin"
+                    type="radio"
+                    label="PLG_SYSTEM_SHANFONT_FIELD_ADMIN_LABEL"
+                    description="PLG_SYSTEM_SHANFONT_FIELD_ADMIN_DESC"
+                    default="0"
+                    class="btn-group btn-group-yesno"
+                >
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+                
+                <field
+                    name="exclude_selectors"
+                    type="textarea"
+                    label="PLG_SYSTEM_SHANFONT_FIELD_EXCLUDE_LABEL"
+                    description="PLG_SYSTEM_SHANFONT_FIELD_EXCLUDE_DESC"
+                    rows="3"
+                    cols="50"
+                    showon="font_mode!:theme_defaults"
+                />
+            </fieldset>
+        </fields>
+    </config>
+    
+    <updateservers>
+        <server type="extension" priority="1" name="Shan Font Updates">
+            https://shanfont.com/updates/shanfont.xml
+        </server>
+    </updateservers>
+</extension>
