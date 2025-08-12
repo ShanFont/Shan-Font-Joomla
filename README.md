@@ -1,12 +1,14 @@
 # Shan Font Joomla Plugin
 
-# Shan Font Joomla Plugin
-
-![Shan Font Logo](assets/ShanFont.webp)
-
 A comprehensive Joomla plugin that enables easy integration of Shan fonts into your website with automatic CDN loading, local fallback, and customizable font selection.
 
-## Features
+**Official Extension Page:** https://extensions.joomla.org/extension/shan-font/
+
+## Description
+
+The Shan Font plugin provides seamless integration of authentic Shan typography into your Joomla website. Designed specifically for Shan-speaking communities and cultural organizations, this plugin offers three distinct font modes with performance optimization and security best practices.
+
+## Key Features
 
 - **Multiple Loading Modes**: Theme Defaults, Quick Setup, and Custom Selection
 - **CDN Integration**: Primary loading from jsdelivr CDN with automatic local fallback
@@ -18,10 +20,30 @@ A comprehensive Joomla plugin that enables easy integration of Shan fonts into y
 
 ## Installation
 
-1. Download the plugin package
-2. Go to Joomla Administrator → Extensions → Manage → Install
-3. Upload and install the plugin package
-4. The plugin will be automatically enabled after installation
+### Automatic Installation (Recommended)
+
+The easiest way to install Shan Font is directly from the official Joomla Extensions Directory:
+
+1. Go to **Extensions → Install Extensions** in your Joomla administrator
+2. Click on **Install from Web** tab
+3. Search for "Shan Font" or visit: https://extensions.joomla.org/extension/shan-font/
+4. Click **Install** and the plugin will be automatically downloaded and installed
+5. The plugin will be automatically enabled after installation
+
+### Alternative Installation Methods
+
+#### From Joomla Extensions Directory
+1. Visit the official extension page: https://extensions.joomla.org/extension/shan-font/
+2. Click **Download** to get the latest stable version
+3. In your Joomla admin, go to **Extensions → Install Extensions**
+4. Choose the downloaded ZIP file under **Upload Package File**
+5. Click **Upload & Install**
+
+#### Manual Installation
+1. Download the plugin package from https://extensions.joomla.org/extension/shan-font/
+2. Extract the files to your server
+3. Upload to the `/plugins/system/shanfont/` directory
+4. Install through **Extensions → Install Extensions → Install from Folder**
 
 ## Configuration
 
@@ -105,6 +127,31 @@ The plugin provides additional CSS utility classes for advanced styling:
 .shan-mobile-center /* Center on mobile */
 ```
 
+## Technical Specifications
+
+### Performance Features
+- **Font Display Swap**: Ensures text remains visible during font load
+- **WOFF2 Format**: Modern, compressed font format for faster loading
+- **Conditional Loading**: Only loads selected fonts in custom mode
+- **CDN Fallback**: Automatic failover to local fonts
+
+### Security Features
+- **Input Validation**: All user inputs are properly sanitized
+- **XSS Protection**: Output is properly escaped
+- **SQL Injection Prevention**: Uses Joomla's database abstraction layer
+- **Access Control**: Admin-only configuration access
+
+### Browser Support
+- Modern browsers supporting WOFF2 (95%+ browser support)
+- Automatic fallback to system fonts if Shan fonts fail to load
+- Cross-platform compatibility (Windows, macOS, Linux, mobile)
+
+## System Requirements
+
+- **Joomla**: 4.0.0 or later
+- **PHP**: 7.4.0 or later
+- **Browser**: Modern browser with WOFF2 support
+
 ## File Structure
 
 ```
@@ -132,30 +179,22 @@ plugins/system/shanfont/
 └── README.md
 ```
 
-## Technical Details
+## Frequently Asked Questions
 
-### Performance Features
-- **Font Display Swap**: Ensures text remains visible during font load
-- **WOFF2 Format**: Modern, compressed font format for faster loading
-- **Conditional Loading**: Only loads selected fonts in custom mode
-- **CDN Fallback**: Automatic failover to local fonts
+**Q: Will this plugin slow down my website?**  
+A: No! The plugin is performance-optimized and uses modern loading techniques. It employs font-display: swap and only loads selected font variants to minimize impact.
 
-### Security Features
-- **Input Validation**: All user inputs are properly sanitized
-- **XSS Protection**: Output is properly escaped
-- **SQL Injection Prevention**: Uses Joomla's database abstraction layer
-- **Access Control**: Admin-only configuration access
+**Q: Can I use this with any Joomla template?**  
+A: Yes! The plugin is designed to work with any properly coded Joomla template. The "Theme Defaults" mode ensures maximum compatibility.
 
-### Browser Support
-- Modern browsers supporting WOFF2 (95%+ browser support)
-- Automatic fallback to system fonts if Shan fonts fail to load
-- Cross-platform compatibility (Windows, macOS, Linux, mobile)
+**Q: Do I need to upload font files manually?**  
+A: No, all necessary Shan font files are included with the plugin installation.
 
-## Requirements
+**Q: What if the CDN is unavailable?**  
+A: The plugin automatically falls back to local font files if the CDN is unreachable, ensuring your fonts always work.
 
-- **Joomla**: 4.0.0 or later
-- **PHP**: 7.4.0 or later
-- **Browser**: Modern browser with WOFF2 support
+**Q: Can I customize which elements use Shan fonts?**  
+A: Yes, the "Custom Selection" mode allows you to choose specific font weights, and you can use CSS utility classes for fine-grained control.
 
 ## Troubleshooting
 
@@ -184,20 +223,26 @@ plugins/system/shanfont/
 - Three configuration modes
 - Responsive design support
 - Performance optimizations
+- Full Joomla coding standards compliance
+- Security best practices implementation
+
+## Contributing
+
+We welcome contributions! Please:
+1. Fork the repository
+2. Create a feature branch
+3. Follow Joomla coding standards
+4. Submit a pull request with detailed description
 
 ## Support
 
-- **Website**: [https://shanfont.com](https://shanfont.com)
+- **Official Extension Page**: https://extensions.joomla.org/extension/shan-font/
+- **Joomla Extensions Directory**: https://extensions.joomla.org/
 - **Developer**: Yord
-- **License**: GNU General Public License version 2 or later
+- **Rate & Review**: Help others by leaving a review on the official extension page
 
 ## License
 
 This plugin is released under the GNU General Public License version 2 or later. See the LICENSE file for details.
 
----
-
 **Developed by Yord** | **© 2025 All Rights Reserved**
-
-## License
-This plugin is licensed under the GPLv2 or later.
