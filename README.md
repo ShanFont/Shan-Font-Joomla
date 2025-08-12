@@ -1,5 +1,5 @@
 # Shan Font Joomla Plugin
-
+![Shan Font Joomla Plugin](https://shanfont.com/wp-content/uploads/2025/07/shan-font-on-joomla-1248x702.jpg)
 A comprehensive Joomla plugin that enables easy integration of Shan fonts into your website with automatic CDN loading, local fallback, and customizable font selection.
 
 **Official Extension Page:** https://extensions.joomla.org/extension/shan-font/
@@ -237,8 +237,8 @@ We welcome contributions! Please:
 ## Support
 
 - **Official Extension Page**: https://extensions.joomla.org/extension/shan-font/
-- **Joomla Extensions Directory**: https://extensions.joomla.org/
-- **Developer**: Yord
+- **Official Project Page**: https://shanfont.com/
+- **Developer**: TaiDev
 - **Rate & Review**: Help others by leaving a review on the official extension page
 
 ## License
